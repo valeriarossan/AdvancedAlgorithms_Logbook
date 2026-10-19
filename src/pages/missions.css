@@ -1,0 +1,214 @@
+.missions-page {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2.25rem;
+  color: #332b25;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.missions-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #cfc2ae;
+}
+
+.archive-label {
+  margin: 0 0 0.6rem;
+  color: #8a6045;
+  font-family: "Courier New", monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.missions-header h1,
+.mission-detail h1 {
+  margin: 0;
+  color: #34271f;
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.missions-header > p:last-child {
+  max-width: 620px;
+  margin: 1rem 0 0;
+  color: #74675b;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.missions-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.mission-card {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr);
+  gap: 1.2rem;
+  padding: 1.5rem;
+  border: 1px solid #d8cbbb;
+  border-radius: 3px;
+  background:
+    linear-gradient(90deg, rgb(128 93 61 / 3%) 1px, transparent 1px),
+    #fbf8f1;
+  background-size: 22px 22px;
+  box-shadow: 2px 3px 0 rgb(77 55 38 / 5%);
+  transition: border-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+
+.mission-card:hover {
+  transform: translateY(-2px);
+  border-color: #ad8c6e;
+  box-shadow: 3px 5px 0 rgb(77 55 38 / 8%);
+}
+
+.mission-card-icon {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border: 1px solid #d4c1aa;
+  border-radius: 50%;
+  color: #875b3e;
+  background: #f4eadb;
+}
+
+.mission-card-content {
+  min-width: 0;
+}
+
+.mission-card-content h2 {
+  margin: 0.1rem 0 0.45rem;
+  color: #3c2d23;
+  font-size: clamp(1.25rem, 2.5vw, 1.65rem);
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.mission-card-content > p:not(.archive-label):not(.mission-date) {
+  margin: 0.8rem 0 1rem;
+  color: #6d6257;
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.mission-date {
+  margin: 0;
+  color: #9a7d62;
+  font-family: "Courier New", monospace;
+  font-size: 0.82rem;
+}
+
+.read-mission-link,
+.back-link,
+.related-algorithm-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: #85583b;
+  font-family: "Courier New", monospace;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 160ms ease;
+}
+
+.read-mission-link {
+  margin-top: 0.2rem;
+}
+
+.read-mission-link:hover,
+.back-link:hover,
+.related-algorithm-link:hover {
+  color: #4e3020;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.back-link {
+  margin-bottom: 1.75rem;
+}
+
+.mission-detail {
+  padding: clamp(1.4rem, 4vw, 3rem);
+  border: 1px solid #d8cbbb;
+  background: #fbf8f1;
+  box-shadow: 3px 4px 0 rgb(77 55 38 / 6%);
+}
+
+.mission-detail > .archive-label {
+  margin-bottom: 0.8rem;
+}
+
+.mission-detail .mission-date {
+  margin-top: 1rem;
+}
+
+.mission-summary {
+  margin: 1.5rem 0;
+  padding: 1rem 1.2rem;
+  border-left: 3px solid #b68a64;
+  background: #f3eadc;
+  color: #5f4a39;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.mission-reflection {
+  margin-top: 1.8rem;
+  color: #51463c;
+  font-size: 1.02rem;
+  line-height: 1.9;
+}
+
+.mission-reflection p {
+  margin: 0 0 1.15rem;
+}
+
+.mission-related {
+  display: grid;
+  justify-items: start;
+  gap: 0.8rem;
+  margin-top: 2.25rem;
+  padding-top: 1.5rem;
+  border-top: 1px dashed #cdbba7;
+}
+
+.mission-related h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0 0 0.3rem;
+  color: #49372a;
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.related-algorithm-link {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 640px) {
+  .missions-page {
+    padding: 1.25rem 1rem;
+  }
+
+  .mission-card {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+    padding: 1.1rem;
+  }
+
+  .mission-card-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .mission-detail {
+    padding: 1.25rem;
+  }
+}
