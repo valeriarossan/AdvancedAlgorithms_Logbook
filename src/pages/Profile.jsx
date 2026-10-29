@@ -65,8 +65,9 @@ export default function Profile() {
 
         <div className="profile-main">
           <div className="profile-portrait">
+            
             <img
-              src="/vale.png"
+              src={`${import.meta.env.BASE_URL}vale.png`}
               alt="Retrato de Valeria"
               className="profile-photo"
             />
