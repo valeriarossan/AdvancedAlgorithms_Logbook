@@ -61,37 +61,6 @@ export default function Classes() {
             </div>
           </div>
 
-          <section className="document-section">
-            <h2>01 / Objetivo</h2>
-            <p>{item.objective || "Sin objetivo registrado."}</p>
-          </section>
-
-          <section className="document-section">
-            <h2>02 / Apuntes de clase</h2>
-            {(item.notes ?? []).length > 0 ? (
-              <ul className="note-list">
-                {item.notes.map((note, index) => (
-                  <li key={index}>{note}</li>
-                ))}
-              </ul>
-            ) : (
-              <p>No hay apuntes registrados para esta clase.</p>
-            )}
-          </section>
-
-          <section className="document-section">
-            <h2>03 / Actividades</h2>
-            {(item.activities ?? []).length > 0 ? (
-              <ul className="note-list">
-                {item.activities.map((activity, index) => (
-                  <li key={index}>{activity}</li>
-                ))}
-              </ul>
-            ) : (
-              <p>No hay actividades registradas para esta clase.</p>
-            )}
-          </section>
-
           <section className="document-section reflection-block">
             <h2>04 / Reflexión personal</h2>
             <p>

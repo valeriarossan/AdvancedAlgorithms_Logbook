@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const links = [
   { to: "/", label: "Inicio", icon: House, end: true },
-  { to: "/profile", label: "About the Author", icon: UserRound },
+  { to: "/profile", label: "Sobre la autora", icon: UserRound },
   { to: "/classes", label: "Registros de clase", icon: FileText },
   { to: "/missions", label: "Misiones", icon: ScrollText },
   { to: "/algorithms", label: "Índice de algoritmos", icon: Library },

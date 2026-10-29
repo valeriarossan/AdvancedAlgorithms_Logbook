@@ -1,9 +1,9 @@
-export const algorithms = [
+export const algorithms =[
   {
     id: "sequential-search",
     code: "ALG-001",
     name: "Búsqueda secuencial",
-    category: "Searching",
+    category: "Búsqueda",
     paradigm: "Brute Force",
     description: "Busca un elemento recorriendo los elementos de una colección uno por uno hasta encontrarlo o agotar la colección.",
     input: "Un arreglo A de n elementos y un valor objetivo x.",
@@ -29,7 +29,7 @@ export const algorithms = [
     id: "binary-search",
     code: "ALG-002",
     name: "Búsqueda binaria",
-    category: "Searching",
+    category: "Búsqueda",
     paradigm: "Divide and Conquer",
     description: "Encuentra un elemento en una colección ordenada descartando la mitad del intervalo de búsqueda en cada iteración.",
     input: "Un arreglo A ordenado y un valor objetivo x.",
@@ -50,20 +50,20 @@ export const algorithms = [
     ]
   },
   {
-    id: "merge-sort",
-    code: "ALG-003",
-    name: "Merge Sort",
-    category: "Sorting",
-    paradigm: "Divide and Conquer",
-    description: "Ordena una colección dividiéndola recursivamente y combinando las partes ordenadas.",
-    input: "Un arreglo de n elementos.",
-    output: "El mismo conjunto de elementos ordenado.",
-    timeComplexity: "O(n log n)",
-    spaceComplexity: "O(n)",
-    stable: "Sí, en la implementación estándar.",
-    steps: [
-      "Dividir el arreglo en dos mitades.",
-      "Ordenar recursivamente cada mitad.",
+    "id": "merge-sort",
+    "code": "ALG-003",
+    "name": "Merge Sort",
+    "category": "Ordenamiento",
+    "paradigm": "Divide y vencerás",
+    "description": "Ordena una colección dividiéndola recursivamente y combinando las partes ordenadas.",
+    "input": "Un arreglo de n elementos.",
+    "output": "El mismo conjunto de elementos ordenado.",
+    "timeComplexity": "O(n log n)",
+    "spaceComplexity": "O(n)",
+    "stable": "Sí, en la implementación estándar.",
+    "steps": [
+      "Dividir los datos en dos mitades.",
+      "Ordenar las mitades.",
       "Combinar las mitades ordenadas."
     ],
     pseudocode: "MERGE-SORT(A)\nif length(A) <= 1\n  return A\n\nleft = MERGE-SORT(first half of A)\nright = MERGE-SORT(second half of A)\n\nreturn MERGE(left, right)",
@@ -76,329 +76,323 @@ export const algorithms = [
     ]
   },
   {
-    id: "quick-sort",
-    code: "ALG-004",
-    name: "Quick Sort",
-    category: "Sorting",
-    paradigm: "Divide and Conquer",
-    description: "Ordena una colección seleccionando un pivote, particionando los elementos alrededor de él y ordenando recursivamente las particiones.",
-    input: "Un arreglo de n elementos.",
-    output: "El arreglo ordenado en el mismo espacio, según la implementación.",
-    timeComplexity: "Promedio: O(n log n); peor caso: O(n²)",
-    spaceComplexity: "Promedio: O(log n) por la recursión; peor caso: O(n)",
-    stable: "No, en la implementación in-place estándar.",
-    steps: [
+    "id": "quick-sort",
+    "code": "ALG-004",
+    "name": "Quick Sort",
+    "category": "Ordenamiento",
+    "paradigm": "Divide y vencerás",
+    "description": "Ordena una colección seleccionando un pivote, particionando los elementos alrededor de él y ordenando recursivamente las particiones.",
+    "input": "Un arreglo de n elementos.",
+    "output": "El arreglo ordenado en el mismo espacio, según la implementación.",
+    "timeComplexity": "Promedio: O(n log n); peor caso: O(n²)",
+    "spaceComplexity": "Promedio: O(log n) por la recursión; peor caso: O(n)",
+    "stable": "No",
+    "steps": [
       "Elegir un pivote.",
-      "Particionar los elementos menores y mayores que el pivote.",
-      "Ordenar recursivamente las particiones.",
-      "Terminar cuando cada partición tenga cero o un elemento."
+      "Particionar los datos.",
+      "Ordenar las particiones."
     ],
-    pseudocode: "QUICK-SORT(A, low, high)\nif low < high\n  p = PARTITION(A, low, high)\n  QUICK-SORT(A, low, p - 1)\n  QUICK-SORT(A, p + 1, high)",
-    classIds: [
+    "pseudocode": "QUICK-SORT(A, low, high)\nif low < high\n  p = PARTITION(A, low, high)\n  QUICK-SORT(A, low, p - 1)\n  QUICK-SORT(A, p + 1, high)",
+    "classIds": [
       "class-05",
       "class-06"
     ],
-    sources: [
+    "sources": [
       "https://www.geeksforgeeks.org/dsa/quick-sort-algorithm/"
     ]
   },
   {
-    id: "strassen",
-    code: "ALG-005",
-    name: "Algoritmo de Strassen",
-    category: "Matrix Multiplication",
-    paradigm: "Divide and Conquer",
-    description: "Multiplica matrices cuadradas usando siete multiplicaciones recursivas de submatrices en lugar de las ocho de la división clásica.",
-    input: "Dos matrices cuadradas compatibles, normalmente de tamaño n × n.",
-    output: "La matriz producto.",
-    timeComplexity: "O(n^log₂7) ≈ O(n^2.807)",
-    spaceComplexity: "Depende de la implementación; comúnmente O(n²) de espacio auxiliar o más por temporales/recursión.",
-    stable: "No aplica.",
-    steps: [
+    "id": "strassen",
+    "code": "ALG-005",
+    "name": "Algoritmo de Strassen",
+    "category": "Multiplicación de matrices",
+    "paradigm": "Divide y vencerás",
+    "description": "Multiplica matrices cuadradas usando siete multiplicaciones recursivas de submatrices en lugar de las ocho de la división clásica.",
+    "input": "Dos matrices compatibles.",
+    "output": "La matriz producto.",
+    "timeComplexity": "O(n^log₂7) ≈ O(n^2.807)",
+    "spaceComplexity": "Comúnmente O(n²) de espacio auxiliar o más por temporales/recursión.",
+    "stable": "No aplica",
+    "steps": [
       "Dividir cada matriz en cuatro submatrices.",
       "Calcular siete productos intermedios mediante sumas y restas.",
       "Combinar esos productos para obtener las cuatro partes de la matriz resultado.",
       "Reunir las partes en la matriz final."
     ],
-    pseudocode: "STRASSEN(A, B)\nif size(A) <= threshold\n  return standard-matrix-multiply(A, B)\n\nPartition A into A11, A12, A21, A22\nPartition B into B11, B12, B21, B22\nCompute the seven Strassen products M1 ... M7\nCombine M1 ... M7 into C11, C12, C21, C22\nreturn C",
-    classIds: [
+    "pseudocode": "STRASSEN(A, B)\nif size(A) <= threshold\n  return standard-matrix-multiply(A, B)\n\nPartition A into A11, A12, A21, A22\nPartition B into B11, B12, B21, B22\nCompute the seven Strassen products M1 ... M7\nCombine M1 ... M7 into C11, C12, C21, C22\nreturn C",
+    "classIds": [
       "class-07"
     ],
-    sources: [
+    "sources": [
       "https://en.wikipedia.org/wiki/Strassen_algorithm"
     ]
   },
   {
-    id: "karatsuba",
-    code: "ALG-006",
-    name: "Karatsuba (multiplicación de enteros grandes)",
-    category: "Integer Multiplication",
-    paradigm: "Divide and Conquer",
-    description: "Multiplica enteros grandes dividiendo cada número en partes altas y bajas y reduciendo de cuatro a tres las multiplicaciones recursivas.",
-    input: "Dos enteros grandes, representados con n dígitos.",
-    output: "El producto de los dos enteros.",
-    timeComplexity: "O(n^log₂3) ≈ O(n^1.585)",
-    spaceComplexity: "Depende de la representación y la implementación; comúnmente O(n) con gestión cuidadosa de temporales.",
-    stable: "No aplica.",
-    steps: [
+    "id": "karatsuba",
+    "code": "ALG-006",
+    "name": "Karatsuba (multiplicación de enteros grandes)",
+    "category": "Aritmética de enteros grandes",
+    "paradigm": "Divide y vencerás",
+    "description": "Multiplica enteros grandes dividiendo cada número en partes altas y bajas y reduciendo de cuatro a tres las multiplicaciones recursivas.",
+    "input": "Dos enteros grandes.",
+    "output": "El producto de los enteros.",
+    "timeComplexity": "O(n^log₂3) ≈ O(n^1.585)",
+    "spaceComplexity": "Comúnmente O(n).",
+    "stable": "No aplica",
+    "steps": [
       "Dividir cada número en una parte alta y una parte baja.",
       "Calcular el producto de las partes bajas, el de las partes altas y un producto combinado.",
       "Obtener el término cruzado mediante restas.",
       "Combinar los resultados con las potencias adecuadas de la base."
     ],
-    pseudocode: "KARATSUBA(x, y)\nif x or y has few digits\n  return x * y\nSplit x into a * B^m + b\nSplit y into c * B^m + d\nz0 = KARATSUBA(b, d)\nz2 = KARATSUBA(a, c)\nz1 = KARATSUBA(a + b, c + d) - z2 - z0\nreturn z2 * B^(2*m) + z1 * B^m + z0",
-    classIds: [
+    "pseudocode": "KARATSUBA(x, y)\nif x or y has few digits\n  return x * y\nSplit x into a * B^m + b\nSplit y into c * B^m + d\nz0 = KARATSUBA(b, d)\nz2 = KARATSUBA(a, c)\nz1 = KARATSUBA(a + b, c + d) - z2 - z0\nreturn z2 * B^(2*m) + z1 * B^m + z0",
+    "classIds": [
       "class-07"
     ],
-    sources: [
+    "sources": [
       "https://en.wikipedia.org/wiki/Karatsuba_algorithm"
     ]
   },
   {
-    id: "closest-pair",
-    code: "ALG-007",
-    name: "Closest Pair of Points",
-    category: "Computational Geometry",
-    paradigm: "Divide and Conquer",
-    description: "Encuentra el par de puntos con la menor distancia euclidiana entre un conjunto de puntos del plano.",
-    input: "Un conjunto P de n puntos en el plano.",
-    output: "El par de puntos cuya distancia es mínima.",
-    timeComplexity: "O(n log n)",
-    spaceComplexity: "O(n) en una implementación estándar con arreglos auxiliares.",
-    stable: "No aplica.",
-    steps: [
+    "id": "closest-pair",
+    "code": "ALG-007",
+    "name": "Par más cercano (Closest Pair)",
+    "category": "Geometría computacional",
+    "paradigm": "Divide y vencerás",
+    "description": "Encuentra el par de puntos con la menor distancia euclidiana entre un conjunto de puntos del plano.",
+    "input": "Un conjunto P de n puntos en el plano.",
+    "output": "El par de puntos cuya distancia es mínima.",
+    "timeComplexity": "O(n log n)",
+    "spaceComplexity": "O(n) en una implementación estándar con arreglos auxiliares.",
+    "stable": "No aplica",
+    "steps": [
       "Ordenar los puntos por coordenada x.",
       "Dividir los puntos en mitades.",
       "Resolver recursivamente cada mitad.",
       "Examinar la franja cercana a la línea divisoria y comparar los puntos relevantes por coordenada y."
     ],
-    pseudocode: "CLOSEST-PAIR(P)\nSort P by x-coordinate\nreturn SOLVE(P)\n\nSOLVE(P)\nif length(P) <= 3\n  return brute-force minimum distance\nDivide P into left and right halves\nd = min(SOLVE(left), SOLVE(right))\nstrip = points within distance d of dividing line\nCheck strip points in y-order\nreturn minimum distance found",
-    classIds: [
+    "pseudocode": "CLOSEST-PAIR(P)\nSort P by x-coordinate\nreturn SOLVE(P)\n\nSOLVE(P)\nif length(P) <= 3\n  return brute-force minimum distance\nDivide P into left and right halves\nd = min(SOLVE(left), SOLVE(right))\nstrip = points within distance d of dividing line\nCheck strip points in y-order\nreturn minimum distance found",
+    "classIds": [
       "class-08"
     ],
-    resourceUrl: "https://www.geeksforgeeks.org/dsa/closest-pair-of-points-using-divide-and-conquer-algorithm/",
-    sources: [
+    "sources": [
       "https://www.geeksforgeeks.org/dsa/closest-pair-of-points-using-divide-and-conquer-algorithm/"
     ]
   },
   {
-    id: "convex-hull",
-    code: "ALG-008",
-    name: "Convex Hull",
-    category: "Computational Geometry",
-    paradigm: "Divide and Conquer",
-    description: "Construye el menor polígono convexo que contiene todos los puntos de un conjunto. Esta ficha usa el método de cadena monótona.",
-    input: "Un conjunto P de n puntos en el plano.",
-    output: "Los vértices del casco convexo ordenados alrededor de su frontera.",
-    timeComplexity: "O(n log n)",
-    spaceComplexity: "O(n)",
-    stable: "No aplica.",
-    steps: [
-      "Ordenar los puntos lexicográficamente.",
-      "Construir la cadena inferior eliminando giros que no pertenezcan a la frontera convexa.",
-      "Construir la cadena superior de forma análoga.",
-      "Unir ambas cadenas para obtener el casco convexo."
-    ],
-    pseudocode: "CONVEX-HULL(P)\nSort points by x, then y\nlower = empty list\nfor p in P\n  while lower has at least 2 points and last turn is not counterclockwise\n    remove last point from lower\n  append p to lower\nupper = build the same way scanning P in reverse\nreturn lower without last point + upper without last point",
-    classIds: [
+    "id": "convex-hull",
+    "code": "ALG-008",
+    "name": "Convex Hull (casco convexo)",
+    "category": "Geometría computacional",
+    "paradigm": "Divide y vencerás",
+    "description": "Construye el menor polígono convexo que contiene todos los puntos de un conjunto.",
+    "input": "Un conjunto P de n puntos en el plano.",
+    "output": "Los vértices del casco convexo ordenados alrededor de su frontera.",
+    "timeComplexity": "O(n log n)",
+    "spaceComplexity": "O(n)",
+    "stable": "",
+    "steps": [],
+    "pseudocode": "CONVEX-HULL(P)\n  Ordenar los puntos de P por coordenada x\n  Dividir P en dos subconjuntos de igual tamaño: Izquierda y Derecha\n  Si P cumple la condición de caso base:\n    Resolver directamente el casco convexo de P\n  HIzq = CONVEX-HULL(Izquierda)\n  HDer = CONVEX-HULL(Derecha)\n  Encontrar la tangente superior entre HIzq y HDer\n  Encontrar la tangente inferior entre HIzq y HDer\n  Unir ambos cascos convexos usando las tangentes\n  Eliminar los segmentos que quedan en el interior del polígono\n  Devolver el casco convexo resultante",
+    "classIds": [
       "class-08"
     ],
-    sources: [
-      "https://en.wikibooks.org/wiki/Algorithm_Implementation/Geometry/Convex_hull/Monotone_chain"
+    "sources": [
     ]
   },
   {
-    id: "binomial-coefficient",
-    code: "ALG-009",
-    name: "Coeficiente binomial",
-    category: "Dynamic Programming",
-    paradigm: "Dynamic Programming",
-    description: "Calcula el coeficiente binomial C(n, k), que cuenta las formas de elegir k elementos de un conjunto de n elementos, reutilizando subresultados.",
-    input: "Enteros n y k, con 0 ≤ k ≤ n.",
-    output: "El valor C(n, k).",
-    timeComplexity: "O(nk)",
-    spaceComplexity: "O(k) con programación dinámica unidimensional.",
-    stable: "No aplica.",
-    steps: [
-      "Usar C(i, 0) = C(i, i) = 1 como casos base.",
-      "Aplicar C(i, j) = C(i-1, j-1) + C(i-1, j).",
-      "Actualizar una fila de resultados desde j = min(i, k) hacia abajo para no sobrescribir valores aún necesarios."
-    ],
-    pseudocode: "BINOMIAL(n, k)\ncreate dp[0..k] filled with 0\ndp[0] = 1\nfor i = 1 to n\n  for j = min(i, k) down to 1\n    dp[j] = dp[j] + dp[j - 1]\nreturn dp[k]",
-    classIds: [],
-    sources: [
-      "https://www.geeksforgeeks.org/dsa/binomial-coefficient-dp-9/"
-    ]
+  "id": "binomial-coefficient",
+  "code": "ALG-009",
+  "name": "Coeficiente binomial",
+  "category": "Coeficiente binomial",
+  "paradigm": "Programación dinámica",
+  "description": "Calcula el coeficiente binomial C(n, k), que cuenta las formas de elegir k elementos de un conjunto de n elementos, reutilizando subresultados.",
+  "input": "Enteros n y k, con 0 ≤ k ≤ n.",
+  "output": "El coeficiente binomial C(n, k).",
+  "timeComplexity": "O(nk)",
+  "spaceComplexity": "O(nk) utilizando una matriz de programación dinámica.",
+  "stable": "",
+  "steps": [
+    "Crear una matriz B para almacenar los resultados de los subproblemas.",
+    "Establecer B[i, j] = 1 cuando j = 0 o j = i.",
+    "Calcular los demás valores mediante B[i, j] = B[i-1, j-1] + B[i-1, j].",
+    "Resolver los subproblemas en orden ascendente, reutilizando los resultados previamente calculados.",
+    "Devolver B[n, k]."
+  ],
+  "pseudocode": "BINOMIAL(n, k)\nCrear matriz B[0..n][0..k]\nfor i = 0 to n\n  for j = 0 to min(i, k)\n    if j = 0 or j = i\n      B[i][j] = 1\n    else\n      B[i][j] = B[i-1][j-1] + B[i-1][j]\nreturn B[n][k]",
+  "classIds": [],
+  "sources": []
   },
   {
-    id: "floyd-warshall",
-    code: "ALG-010",
-    name: "Floyd-Warshall",
-    category: "Graph Algorithms",
-    paradigm: "Dynamic Programming",
-    description: "Calcula las distancias mínimas entre todos los pares de vértices de un grafo ponderado, siempre que no existan ciclos negativos alcanzables que invaliden las distancias.",
-    input: "Un grafo ponderado representado por una matriz de distancias.",
-    output: "La matriz de distancias mínimas entre todos los pares de vértices.",
-    timeComplexity: "O(V³)",
-    spaceComplexity: "O(V²)",
-    stable: "No aplica.",
-    steps: [
+    "id": "floyd-warshall",
+    "code": "ALG-010",
+    "name": "Algoritmo de Floyd",
+    "category": "Caminos más cortos en grafos",
+    "paradigm": "Programación dinámica",
+    "description": "Calcula las distancias mínimas entre todos los pares de vértices de un grafo ponderado, siempre que no existan ciclos negativos alcanzables que invaliden las distancias.",
+    "input": "Matriz de adyacencias de un grafo ponderado.",
+    "output": "Matriz de distancias mínimas.",
+    "timeComplexity": "O(n³)",
+    "spaceComplexity": "O(n²)",
+    "stable": "",
+    "steps": [
       "Inicializar la matriz con los pesos de las aristas, cero en la diagonal e infinito cuando no hay arista.",
       "Considerar cada vértice k como posible intermediario.",
       "Para cada par i, j, comparar la distancia actual con dist[i][k] + dist[k][j].",
       "Actualizar la distancia si la ruta por k es más corta."
     ],
-    pseudocode: "FLOYD-WARSHALL(dist)\nfor k = 0 to V - 1\n  for i = 0 to V - 1\n    for j = 0 to V - 1\n      if dist[i][k] + dist[k][j] < dist[i][j]\n        dist[i][j] = dist[i][k] + dist[k][j]\nreturn dist",
-    classIds: [
-      "class-13"
-    ],
-    sources: [
-      "https://www.geeksforgeeks.org/dsa/floyd-warshall-algorithm-dp-16/"
-    ]
+    "pseudocode": "D = matriz de adyacencias\nfor k = 1 to n do\n  for i = 1 to n do\n    for j = 1 to n do\n      D[i,j] = minimo(D[i,j], D[i,k] + D[k,j])",
+    "classIds": ["class-12", "class-13"],
+    "sources": []
   },
   {
-    id: "godbole",
-    code: "ALG-011",
-    name: "Algoritmo de Godbole (cadena de matrices)",
-    category: "Dynamic Programming",
-    paradigm: "Dynamic Programming",
-    description: "Resuelve el problema de parentización óptima de una cadena de matrices mediante subproblemas y reutilización de costos calculados.",
-    input: "Las dimensiones de una secuencia de n matrices compatibles.",
-    output: "El costo mínimo de multiplicaciones escalares y la parentización que lo consigue.",
-    timeComplexity: "O(n³)",
-    spaceComplexity: "O(n²)",
-    stable: "No aplica.",
-    steps: [
-      "Resolver primero las cadenas de una matriz.",
-      "Aumentar progresivamente la longitud de la cadena considerada.",
-      "Probar cada punto de división posible.",
-      "Guardar el menor costo para cada subcadena y la división que lo produce."
+    "id": "godbole",
+    "code": "ALG-011",
+    "name": "Algoritmo de Godbole (multiplicación encadenada de matrices)",
+    "category": "Multiplicación encadenada de matrices",
+    "paradigm": "Programación dinámica",
+    "description": "Encuentra la asociación óptima para multiplicar una secuencia de matrices; no multiplica las matrices.",
+    "input": "Dimensiones d₀, d₁, …, dₙ de las matrices.",
+    "output": "Cantidad mínima de multiplicaciones escalares.",
+    "timeComplexity": "O(n³)",
+    "spaceComplexity": "O(n²)",
+    "stable": "No aplica",
+    "steps": [
+      "Inicializar D[i,i] = 0.",
+      "Calcular subproblemas por diagonales crecientes.",
+      "Para cada intervalo, probar los puntos de división y conservar el mínimo."
     ],
-    pseudocode: "GODBole(p)\nfor length = 2 to n\n  for i = 1 to n - length + 1\n    j = i + length - 1\n    cost[i][j] = infinity\n    for k = i to j - 1\n      candidate = cost[i][k] + cost[k + 1][j] + p[i - 1] * p[k] * p[j]\n      if candidate < cost[i][j]\n        cost[i][j] = candidate\n        split[i][j] = k\nreturn cost[1][n], split",
-    classIds: [],
-    sources: [
-      "https://link.springer.com/article/10.1007/s10878-025-01290-7",
-      "https://www.researchgate.net/publication/328410616_Speeding_up_CGM-Based_Parallel_Algorithm_for_Minimum_Cost_Parenthesizing_Problem"
-    ]
+    "pseudocode": "for i = 1 to n do D[i,i] = 0\nfor diag = 1 to n-1 do\n  for i = 1 to n-diag do\n    j = i + diag\n    D[i,j] = minimo(i, j, D, d)\nreturn D[1,n]",
+    "classIds": ["class-14"],
+    "sources": []
   },
   {
-    id: "gilbert-moore",
-    code: "ALG-012",
-    name: "Gilbert y Moore (ABB óptimo)",
-    category: "Optimal Binary Search Trees",
-    paradigm: "Dynamic Programming",
-    description: "Construye un árbol de búsqueda binaria óptimo para un caso de probabilidades de búsqueda ordenadas, minimizando el costo esperado de búsqueda.",
-    input: "Claves ordenadas y probabilidades asociadas a las búsquedas; la formulación exacta depende de si se incluyen búsquedas exitosas y/o fallidas.",
-    output: "La estructura de un árbol de búsqueda óptimo para la distribución dada.",
-    timeComplexity: "O(n³) en el algoritmo clásico de Gilbert y Moore.",
-    spaceComplexity: "O(n²)",
-    stable: "No aplica.",
-    steps: [
-      "Calcular los pesos de los intervalos de claves.",
-      "Considerar intervalos de longitud creciente.",
-      "Probar cada clave como raíz del intervalo.",
-      "Combinar los costos de los subárboles izquierdo y derecho con el peso del intervalo y conservar el mínimo."
+    "id": "gilbert-moore",
+    "code": "ALG-012",
+    "name": "Gilbert y Moore (ABB óptimo)",
+    "category": "Árbol binario de búsqueda óptimo",
+    "paradigm": "Programación dinámica",
+    "description": "Encuentra el ABB que minimiza el promedio de búsqueda cuando se conocen las probabilidades de búsqueda de las llaves.",
+    "input": "Llaves ordenadas y sus probabilidades de búsqueda.",
+    "output": "El ABB con promedio de búsqueda mínimo.",
+    "timeComplexity": "O(n³)",
+    "spaceComplexity": "O(n²)",
+    "stable": "",
+    "steps": [
+      "Definir Aᵢ,ⱼ como el promedio mínimo de búsqueda para las llaves de dᵢ a dⱼ.",
+      "Evaluar posibles raíces y combinar los promedios óptimos de los subárboles.",
+      "Conservar el mínimo."
     ],
-    pseudocode: "OPTIMAL-ALPHABETIC-TREE(p)\nfor each single-key interval [i, i]\n  cost[i][i] = base cost\nfor length = 2 to n\n  for each interval [i, j] of this length\n    cost[i][j] = infinity\n    for r = i to j\n      candidate = cost[i][r - 1] + cost[r + 1][j] + weight(i, j)\n      keep the minimum candidate and root r\nreturn root table and cost table",
-    classIds: [],
-    sources: [
-      "https://en.wikipedia.org/wiki/Optimal_binary_search_tree"
-    ]
+    "pseudocode": "",
+    "classIds": ["class-15"],
+    "sources": []
   },
   {
-    id: "traveling-salesman",
-    code: "ALG-013",
-    name: "Problema del viajero (Held-Karp)",
-    category: "Combinatorial Optimization",
-    paradigm: "Dynamic Programming",
-    description: "Encuentra un ciclo de costo mínimo que visita cada ciudad exactamente una vez y regresa al origen, usando subproblemas indexados por subconjuntos.",
-    input: "Un grafo completo ponderado de n ciudades.",
-    output: "Un recorrido de costo mínimo que visita cada ciudad una vez y vuelve al origen.",
-    timeComplexity: "O(n² · 2ⁿ)",
-    spaceComplexity: "O(n · 2ⁿ)",
-    stable: "No aplica.",
-    steps: [
-      "Fijar una ciudad de origen.",
-      "Definir estados por subconjunto de ciudades visitadas y ciudad final.",
-      "Construir cada estado a partir de estados con una ciudad menos.",
-      "Cerrar el ciclo regresando al origen y reconstruir el recorrido óptimo."
+    "id": "traveling-salesman",
+    "code": "ALG-013",
+    "name": "Problema del viajero",
+    "category": "Optimización combinatoria",
+    "paradigm": "Programación dinámica",
+    "description": "Busca la ruta óptima que recorre n puntos, pasa una sola vez por cada uno y regresa al origen.",
+    "input": "Grafo ponderado representado por su matriz W.",
+    "output": "Ciclo hamiltoniano de costo mínimo.",
+    "timeComplexity": "O(n² · 2ⁿ)",
+    "spaceComplexity": "O(n · 2ⁿ)",
+    "stable": "",
+    "steps": [
+      "Definir D[vᵢ, A] como el costo de la ruta óptima de vᵢ al origen pasando por los vértices de A.",
+      "Usar D[vᵢ, ∅] = W[i,1] como caso base.",
+      "Calcular cada estado probando los vértices siguientes de A y conservando el costo mínimo."
     ],
-    pseudocode: "HELD-KARP(dist)\nDP[{start}, start] = 0\nfor each subset S containing start\n  for each v in S, v != start\n    DP[S, v] = min over u in S, u != v of DP[S - {v}, u] + dist[u][v]\nanswer = min over v != start of DP[all cities, v] + dist[v][start]\nreturn answer",
-    classIds: [],
-    sources: [
-      "https://web.cs.dal.ca/~nzeh/Teaching/4113/book/dynamic_programming/tsp.html"
-    ]
+    "pseudocode": "",
+    "classIds": ["class-16", "class-17"],
+    "sources": []
   },
   {
-    id: "prim",
-    code: "ALG-014",
-    name: "Prim",
-    category: "Minimum Spanning Tree",
-    paradigm: "Greedy",
-    description: "Construye un árbol de expansión mínima creciendo desde un vértice y agregando repetidamente la arista de menor peso que conecta el árbol con un vértice aún no incluido.",
-    input: "Un grafo no dirigido, conexo y ponderado.",
-    output: "Un árbol de expansión mínima.",
-    timeComplexity: "O(E log V) con lista de adyacencia y cola de prioridad binaria.",
-    spaceComplexity: "O(V + E)",
-    stable: "No aplica.",
-    steps: [
-      "Elegir un vértice inicial.",
-      "Mantener una cola de prioridad con las aristas candidatas más baratas.",
-      "Extraer el vértice no visitado con menor costo de conexión.",
-      "Agregar la arista correspondiente y actualizar los costos de sus vecinos."
+    "id": "prim",
+    "code": "ALG-014",
+    "name": "Prim",
+    "category": "Árbol de extensión mínima",
+    "paradigm": "Algoritmo voraz",
+    "description": "Construye un árbol de expansión mínima creciendo desde un vértice y agregando repetidamente la arista de menor peso que conecta el árbol con un vértice aún no incluido.",
+    "input": "Un grafo no dirigido y ponderado.",
+    "output": "Árbol de extensión mínima.",
+    "timeComplexity": "O(n²)",
+    "spaceComplexity": "",
+    "stable": "",
+    "steps": [
+      "Iniciar con un vértice en Y.",
+      "Seleccionar el vértice fuera de Y más cercano a alguno de los vértices en Y.",
+      "Agregar el vértice y la arista correspondiente.",
+      "Terminar cuando Y = V."
     ],
-    pseudocode: "PRIM(G, start)\nkey[start] = 0\npush start into min-priority queue\nwhile queue is not empty\n  u = extract-min(queue)\n  mark u visited\n  for each edge (u, v, weight)\n    if v not visited and weight < key[v]\n      parent[v] = u\n      key[v] = weight\n      decrease-key(v, weight)\nreturn parent",
-    classIds: [],
-    sources: [
-      "https://www.geeksforgeeks.org/dsa/prims-minimum-spanning-tree-mst-greedy-algo-5/"
-    ]
+    "pseudocode": "S = ∅\nY = {v1}\nwhile Y != V:\n  seleccionar el vértice de V-Y más cercano a un vértice en Y\n  agregar el vértice a Y\n  agregar la arista correspondiente a S",
+    "classIds": ["class-17", "class-18"],
+    "sources": []
   },
   {
-    id: "kruskal",
-    code: "ALG-015",
-    name: "Kruskal",
-    category: "Minimum Spanning Tree",
-    paradigm: "Greedy",
-    description: "Construye un árbol de expansión mínima procesando las aristas en orden de peso y agregando solo aquellas que no forman un ciclo.",
-    input: "Un grafo no dirigido y ponderado.",
-    output: "Un árbol de expansión mínima o un bosque mínimo si el grafo no es conexo.",
-    timeComplexity: "O(E log E)",
-    spaceComplexity: "O(V + E)",
-    stable: "No aplica.",
-    steps: [
+    "id": "kruskal",
+    "code": "ALG-015",
+    "name": "Kruskal",
+    "category": "Árbol de extensión mínima",
+    "paradigm": "Algoritmo voraz",
+    "description": "Construye un árbol de expansión mínima procesando las aristas en orden de peso y agregando solo aquellas que no forman un ciclo.",
+    "input": "Un grafo no dirigido y ponderado.",
+    "output": "Árbol de extensión mínima.",
+    "timeComplexity": "O(m log m)",
+    "spaceComplexity": "",
+    "stable": "",
+    "steps": [
       "Ordenar las aristas por peso ascendente.",
-      "Inicializar una estructura de conjuntos disjuntos, uno por vértice.",
-      "Recorrer las aristas ordenadas.",
-      "Agregar una arista si sus extremos pertenecen a componentes diferentes y unir esas componentes."
+      "Seleccionar la arista menos costosa.",
+      "Agregarla si conecta vértices de subconjuntos distintos.",
+      "Terminar cuando todos los subconjuntos se hayan unido."
     ],
-    pseudocode: "KRUSKAL(G)\nT = empty set\nsort edges by increasing weight\nmake-set(v) for each vertex v\nfor each edge (u, v) in sorted edges\n  if find(u) != find(v)\n    add (u, v) to T\n    union(u, v)\nreturn T",
-    classIds: [],
-    sources: [
-      "https://www.geeksforgeeks.org/dsa/kruskals-minimum-spanning-tree-algorithm-greedy-algo/"
-    ]
+    "pseudocode": "S = ∅\nY = subconjuntos disjuntos, uno por vértice\nordenar las aristas por peso ascendente\nwhile no se haya resuelto el problema:\n  seleccionar la siguiente arista menos costosa\n  si conecta dos subconjuntos distintos:\n    unir los subconjuntos y agregar la arista a S",
+    "classIds": ["class-17", "class-18"],
+    "sources": []
   },
   {
-    id: "dijkstra",
-    code: "ALG-016",
-    name: "Dijkstra",
-    category: "Shortest Paths",
-    paradigm: "Greedy",
-    description: "Encuentra las distancias mínimas desde un origen a los demás vértices de un grafo con pesos no negativos.",
-    input: "Un grafo ponderado con pesos no negativos y un vértice origen.",
-    output: "Las distancias mínimas desde el origen y, opcionalmente, los predecesores para reconstruir rutas.",
-    timeComplexity: "O((V + E) log V) con lista de adyacencia y cola de prioridad binaria.",
-    spaceComplexity: "O(V + E)",
-    stable: "No aplica.",
-    steps: [
+    "id": "dijkstra",
+    "code": "ALG-016",
+    "name": "Dijkstra",
+    "category": "Árbol del camino más corto",
+    "paradigm": "Algoritmo voraz",
+    "description": "Obtiene los caminos más cortos desde un vértice inicial hacia el resto de los vértices.",
+    "input": "Grafo ponderado y vértice origen.",
+    "output": "Árbol del camino más corto desde el origen.",
+    "timeComplexity": "O(n²)",
+    "spaceComplexity": "",
+    "stable": "",
+    "steps": [
       "Inicializar la distancia del origen en cero y las demás en infinito.",
       "Extraer de la cola el vértice con distancia tentativa mínima.",
       "Relajar las aristas salientes actualizando distancias y predecesores.",
       "Continuar hasta procesar los vértices alcanzables."
     ],
-    pseudocode: "DIJKSTRA(G, source)\nfor each vertex v\n  dist[v] = infinity\n  previous[v] = undefined\ndist[source] = 0\npush (0, source) into min-priority queue\nwhile queue not empty\n  (d, u) = extract-min(queue)\n  if d != dist[u] continue\n  for each edge (u, v, weight)\n    if dist[u] + weight < dist[v]\n      dist[v] = dist[u] + weight\n      previous[v] = u\n      push (dist[v], v) into queue\nreturn dist, previous",
-    classIds: [],
-    sources: [
-      "https://www.geeksforgeeks.org/dsa/dijkstras-shortest-path-algorithm-greedy-algo-7/"
-    ]
+    "pseudocode": "DIJKSTRA(G, source)\nfor each vertex v\n  dist[v] = infinity\n  previous[v] = undefined\ndist[source] = 0\npush (0, source) into min-priority queue\nwhile queue not empty\n  (d, u) = extract-min(queue)\n  if d != dist[u] continue\n  for each edge (u, v, weight)\n    if dist[u] + weight < dist[v]\n      dist[v] = dist[u] + weight\n      previous[v] = u\n      push (dist[v], v) into queue\nreturn dist, previous",
+    "classIds": ["class-19"],
+    "sources": []
+  },
+  {
+    "id": "huffman",
+    "code": "ALG-017",
+    "name": "Código de Huffman",
+    "category": "Compresión de datos",
+    "paradigm": "Algoritmo voraz",
+    "description": "Comprime información sin pérdida asignando códigos binarios de diferente longitud a los símbolos.",
+    "input": "Símbolos y sus frecuencias.",
+    "output": "Árbol de Huffman y código binario de cada símbolo.",
+    "timeComplexity": "",
+    "spaceComplexity": "",
+    "stable": "",
+    "steps": [
+      "Identificar los dos nodos de menor frecuencia y unirlos en un nuevo nodo cuya frecuencia sea la suma.",
+      "Repetir seleccionando siempre los dos nodos de menor frecuencia.",
+      "Cuando se haya unido el último par, asignar 0 y 1 a las ramas del árbol.",
+      "El camino desde la raíz hasta cada hoja determina el código del símbolo."
+    ],
+    "pseudocode": "",
+    "classIds": ["class-20"],
+    "sources": []
   }
-];
+]

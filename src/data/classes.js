@@ -43,10 +43,10 @@ export const classes = [
     id: "class-05",
     code: "CF-005",
     title: "Clase #5",
-    date: "",
-    dateLabel: "",
+    date: "2026-08-24",
+    dateLabel: "24 de agosto del 2026",
     summary: "Repaso de algoritmos de ordenamiento, Merge Sort y Quick Sort.",
-    reflection: "24 agosto del 2026\n\nEsta clase fue una prueba de que siempre hay algo por mejorar. Empecé la clase un poco cansada por el trabajo del fin de semana y aunque no me sentí totalmente perdida debido a experiencias pasadas con los temas de la clase, sí pude notar que mi conocimiento aún tenía algunas lagunas que era importante rellenar. Además, repasamos un poco los algoritmos de ordenamiento y su importancia. Al final de la clase nos enfocamos en merge sort y quick sort. Es en esta parte donde diría yo que tengo más área de oportunidad pues me costó bastante trabajo la parte de responder preguntas por correo y aun así las tuve mal. En general fue una clase medianamente retadora, pero no incomprensible.",
+    reflection: "Esta clase fue una prueba de que siempre hay algo por mejorar. Empecé la clase un poco cansada por el trabajo del fin de semana y aunque no me sentí totalmente perdida debido a experiencias pasadas con los temas de la clase, sí pude notar que mi conocimiento aún tenía algunas lagunas que era importante rellenar. Además, repasamos un poco los algoritmos de ordenamiento y su importancia. Al final de la clase nos enfocamos en merge sort y quick sort. Es en esta parte donde diría yo que tengo más área de oportunidad pues me costó bastante trabajo la parte de responder preguntas por correo y aun así las tuve mal. En general fue una clase medianamente retadora, pero no incomprensible.",
     algorithmIds: [
       "merge-sort",
       "quick-sort"
@@ -56,10 +56,10 @@ export const classes = [
     id: "class-06",
     code: "CF-006",
     title: "Clase #6",
-    date: "",
-    dateLabel: "",
+    date: "2026-08-27",
+    dateLabel: "27 de agosto del 2026",
     summary: "Autoevaluación #1 y preparación para la Misión #3.",
-    reflection: "27 agosto del 2026\n\nEsta clase tuvimos la autoevaluación #1 correspondiente a la semana 3. Sin embargo, antes de esta tuvimos un poco de tiempo para hablar de otros temas como la misión #3 en la que tendríamos que trabajar con merge sort y quick sort alterados. Finalmente llegó el momento de la autoevaluación y aunque si me tomé el tiempo previo a la clase para hacer un pequeño repaso, específicamente de BigO, si sentí que al presentarme con varias opciones, la autoevaluación fue un poco difícil. No obstante, esta en mis planes empezar con el mastery learning este fin de semana y trabajar para aprender más que por la calificación.",
+    reflection: "Esta clase tuvimos la autoevaluación #1 correspondiente a la semana 3. Sin embargo, antes de esta tuvimos un poco de tiempo para hablar de otros temas como la misión #3 en la que tendríamos que trabajar con merge sort y quick sort alterados. Finalmente llegó el momento de la autoevaluación y aunque si me tomé el tiempo previo a la clase para hacer un pequeño repaso, específicamente de BigO, si sentí que al presentarme con varias opciones, la autoevaluación fue un poco difícil. No obstante, esta en mis planes empezar con el mastery learning este fin de semana y trabajar para aprender más que por la calificación.",
     algorithmIds: [
       "merge-sort",
       "quick-sort"
@@ -69,10 +69,10 @@ export const classes = [
     id: "class-07",
     code: "CF-007",
     title: "Clase #7",
-    date: "",
-    dateLabel: "",
+    date: "2026-08-31",
+    dateLabel: "31 de agosto del 2026",
     summary: "Profundización en Strassen y presentación de Karatsuba.",
-    reflection: "31 agosto del 2026\n\nDurante esta clase nos enfocamos en retomar el algoritmo de Strassen y entenderlo más a profundidad. He de admitir que aunque ya habíamos hablado del algoritmo en clases pasadas, esta vez estuve más presente en la clase y pude entender más allá que solo la idea general. El profesor también nos habló un poco más del algoritmo de Karatsuba para multiplicación para el cuál se encuentra una ficha técnica breve a continuación:",
+    reflection: "Durante esta clase nos enfocamos en retomar el algoritmo de Strassen y entenderlo más a profundidad. He de admitir que aunque ya habíamos hablado del algoritmo en clases pasadas, esta vez estuve más presente en la clase y pude entender más allá que solo la idea general. El profesor también nos habló un poco más del algoritmo de Karatsuba para multiplicación para el cuál se encuentra una ficha técnica breve a continuación:",
     algorithmIds: [
       "strassen",
       "karatsuba"
@@ -82,10 +82,10 @@ export const classes = [
     id: "class-08",
     code: "CF-008",
     title: "Clase #8",
-    date: "",
-    dateLabel: "",
+    date: "2026-09-03",
+    dateLabel: "3 de septiembre del 2026",
     summary: "Convex Hull y Closest Pair como problemas de Divide y Vencerás.",
-    reflection: "3 septiembre del 2026\n\nEsta clase vimos los temas de Convex Hull y Closest Pair. Como recordatorio a mí misma el Convex Hull es el polígono más pequeño que contiene dentro de sí mismo a un conjunto de puntos pre-establecidos mientras que el Closest Pair es el problema que nos presentaron para resolver con Divide y Vencerás. Siento que a mí me sirvieron mucho estos 2 temas porque muchas veces me quedo con que Divide y Vencerás se trata de eliminar la mitad del problema o simplemente se puede ejecutar con listas. Sin embargo, estos problemas me enseñaron que hay una infinidad de problemas que encuentran su mejor solución en esta estrategia y que hay que pensar un poco más creativamente.\n\nRecurso para Closest Pair: https://www.geeksforgeeks.org/dsa/closest-pair-of-points-using-divide-and-conquer-algorithm/\n\nResumen visual de Closest Pair:",
+    reflection: "Esta clase vimos los temas de Convex Hull y Closest Pair. Como recordatorio a mí misma el Convex Hull es el polígono más pequeño que contiene dentro de sí mismo a un conjunto de puntos pre-establecidos mientras que el Closest Pair es el problema que nos presentaron para resolver con Divide y Vencerás. Siento que a mí me sirvieron mucho estos 2 temas porque muchas veces me quedo con que Divide y Vencerás se trata de eliminar la mitad del problema o simplemente se puede ejecutar con listas. Sin embargo, estos problemas me enseñaron que hay una infinidad de problemas que encuentran su mejor solución en esta estrategia y que hay que pensar un poco más creativamente.\n\nRecurso para Closest Pair: https://www.geeksforgeeks.org/dsa/closest-pair-of-points-using-divide-and-conquer-algorithm/\n\nResumen visual de Closest Pair:",
     algorithmIds: [
       "convex-hull",
       "closest-pair"
@@ -95,10 +95,10 @@ export const classes = [
     id: "class-10",
     code: "CF-010",
     title: "Clase #10",
-    date: "",
-    dateLabel: "",
+    date: "2026-09-10",
+    dateLabel: "10 de septiembre del 2026",
     summary: "Clase en línea, recapitulación y autoevaluación #2.",
-    reflection: "10 septiembre del 2026\n\nEsta clase fue de forma en línea y me sentí bastante cómoda. Aunque por momentos si habían algunas distracciones, fui capaz de regresar mi atención a la clase y pude ponerme al día sobre los temas que se tocaron en la clase pasada que no vi debido a una falta. Entendí bastante no solo debido a la clase sino a conocimientos de clases pasadas que me permitieron entender lo que el profesor decía con facilidad. Además de una recapitulación de esos temas, hoy tuvimos la autoevaluación #2. Realmente siento que pude haberlo hecho mucho mejor si le hubiese dado más tiempo tanto al estudio previo como a la evaluación cómo tal. Sin embargo, lo tomaré como un punto de referencia en que hay que mejorar y trabajaré en el mastery learning lo antes posible. Finalmente, antes de la autoevaluación hablamos sobre la situación problema y nos mencionaron que hay que reunirnos como gremio. Aún no tengo ni idea de que voy a estar haciendo especificamente para esta entrega, pero me gustaría que sea algo con una aplicación cotidiana y que tenga el potencial de solucionar algun problema con el que nos encontremos diariamente en la actualidad.",
+    reflection: "Esta clase fue de forma en línea y me sentí bastante cómoda. Aunque por momentos si habían algunas distracciones, fui capaz de regresar mi atención a la clase y pude ponerme al día sobre los temas que se tocaron en la clase pasada que no vi debido a una falta. Entendí bastante no solo debido a la clase sino a conocimientos de clases pasadas que me permitieron entender lo que el profesor decía con facilidad. Además de una recapitulación de esos temas, hoy tuvimos la autoevaluación #2. Realmente siento que pude haberlo hecho mucho mejor si le hubiese dado más tiempo tanto al estudio previo como a la evaluación cómo tal. Sin embargo, lo tomaré como un punto de referencia en que hay que mejorar y trabajaré en el mastery learning lo antes posible. Finalmente, antes de la autoevaluación hablamos sobre la situación problema y nos mencionaron que hay que reunirnos como gremio. Aún no tengo ni idea de que voy a estar haciendo especificamente para esta entrega, pero me gustaría que sea algo con una aplicación cotidiana y que tenga el potencial de solucionar algun problema con el que nos encontremos diariamente en la actualidad.",
     algorithmIds: []
   },
   {
@@ -117,9 +117,9 @@ export const classes = [
     title: "Clase #12",
     date: "2026-09-24",
     dateLabel: "24 de septiembre del 2026",
-    summary: "Entrada sin recuerdo del contenido de la clase.",
-    reflection: "No me acuerdo :(",
-    algorithmIds: []
+    summary: "Grafos + Floyd.",
+    reflection: "El día de hoy tuvimos un breve repaso del tema de grafos. Este es un tema que ya había visitado en el pasado, más específicamente, en la clase de estructura de datos y algoritmos del semestre pasado, pero un repaso nunca está mal. Después del repaso y una breve introducción sobre dónde podíamos encontrar grafos implementados en la vida real, el profesor nos presentó el siguiente algoritmo: Floyd. Realmente pensé que veríamos Dijsktra porque ese es el que habíamos usado en el pasado, pero me dí cuenta de que Floyd era una forma más entendible de sacar los caminos óptimos de todos los nodos a todos sin ciclar un Dijkstra n veces. Creo que ha sido uno de los algoritmos que capte más rápidamente y es una gran herramienta para resolver un problema que se aplica en muchísimos lugares.",
+    algorithmIds: ["floyd-warshall"]
   },
   {
     id: "class-13",
@@ -132,5 +132,75 @@ export const classes = [
     algorithmIds: [
       "floyd-warshall"
     ]
-  }
+  },
+  {
+    id: "class-14",
+    code: "CF-014",
+    title: "Clase #14",
+    date: "2026-10-01",
+    dateLabel: "1 de octubre del 2026",
+    summary: "Introducción a Godbole.",
+    reflection: "La clase empezó con una de las diapositivas donde el profesor nos muestra no solo cómo el percibe que el grupo va sino estadísticas que lo demuestran. Además pudimos ver sesiones donde nosotros, como grupo, hemos tenido días malos y áreas de oportunidad. Después, regresamos a las matrices. Es verdad que aunque llevó trabajando con matrices por varios años y sabía que la multiplicación de matrices era costosa, nunca me había preguntado que ocurría cuando se querían multiplicar más de 2 matrices. Es por eso que tampoco me había preguntado como cambiaban las cantidades de operaciones que se hacían según el orden en el que se multiplicaban las matrices. El profesor nos guió por la explicación de Godbole haciendonos cuestionar que orden sería el óptimo si respetabamos la propiedad de las multiplicaciones de no ser conmutativas, pero explotabamos la de si ser asociativas. Terminamos con una actividad en excel, pero siendo honesta, todavía necesito práctica para entender el algoritmo.",
+    algorithmIds: ["godbole"]
+  },
+  {
+    id: "class-15",
+    code: "CF-015",
+    title: "Clase #15",
+    date: "2026-10-05",
+    dateLabel: "5 de octubre del 2026",
+    summary: "ABBs óptimos y búsqueda inteligente.",
+    reflection: "En esta clase el profesor nos planteó un escenario bastante interesante: ¿cómo haces que una búsqueda sea inteligente? Sí, ya sabemos que la búsqueda binaria es mágica porque en un abrir y cerrar de ojos te elimino la mitad de los elementos en los que tienes que búscar, pero, ¿y si ordenaramos de forma que le dieramos un párametro más para considerar? Después de que haya sido explicado me hizo tanto sentido que si sabes que a un elemento lo vas a ir a buscar una y otra vez, ¿para que lo mandarías al fondo del árbol donde tienes que recorrer un montón de nodos? Si considerarámos esas probabilidades de ser búscado, entonces reduces la cantidad de nodos que visitas para una gran parte de tus búsquedas y haces que las búsquedas más populares sean las más rápidas. Lo que más me sorprendió, diría yo, es que en este algoritmo, un árbol desbalanceado puede ser la respuesta. En la búsqueda binaria, un árbol desbalanceado es un poco de una perdición. Acá habrá que explorar diferentes casos para darnos cuenta de que ese no es el caso.",
+    algorithmIds: ["gilbert-moore"]
+  },
+  {
+    id: "class-16",
+    code: "CF-016",
+    title: "Clase #16",
+    date: "2026-10-08",
+    dateLabel: "8 de octubre del 2026",
+    summary: "Problema del viajero y sus complejidades.",
+    reflection: "En esta clase exploramos el problema del viajero. Este problema se trata de encontrar el camino óptimo para recorrer todos los nodos y regresar al primero. Creo que aunque en teoría se veía muy bonito y se le puede ver utilidad, al ver la matriz, no voy a mentir, me espanté bastante, pues aunque del lado de los renglones tiene a todos los vértices, del lado de las columnas tenía a los conjuntos y eso se veía bastante pesado. Sin embargo, rápidamente me di cuenta de porque alguien había pensado en esta solución. Con fuerza bruta la complejidad temporal era factorial, lo cuál hacia que el problema no pudiera crecer demasiado. Sin embargo, con el nuevo algoritmo se convertía en O(n^2*2^n) lo cuál, para otros algoritmos es bastante malo, pero para este, es bueno. En esta ocasión no nos metimos mucho a la implementación, pero nos comentó el profesor que si quisieramos implementarlo, podríamos considerarlo cómo nuestra situación problema que se entrega al final del semestre.",
+    algorithmIds: ["traveling-salesman"]
+  },
+  {
+    id: "class-17",
+    code: "CF-017",
+    title: "Clase #17",
+    date: "2026-10-12",
+    dateLabel: "12 de octubre del 2026",
+    summary: "¿Prim o Kruskal? Explorando la escuela de los algoritmos voraces.",
+    reflection: "El día de hoy empezamos despertandonos con un check de aprendizaje en forma de kahoot. He de admitir que en algunas preguntas estaba bastante pérdida y dependía completamente de mi suerte. Lo cual demuestra que tengo que empezar a estudiar con más cuidado el problema del viajero. Sin embargo, si tuve una cantidad considerable de respuestas bien. Por lo tanto, me agrada que haya tenido esta oportunidad de practicar y observar mis áreas de oportunidad. Después del kahoot empezamos a ver la escuela de los algoritmos voraces. Esta escuela me pareció interesante porque era una pregunta que me venía cargando desde que empezamos la escuela de la optimización. ¿Realmente había una diferencia entre considerar el costo menor inmediato a explorar todas las diferentes posibilidades? Ahora, por fin tendría la oportunidad de explorar. El profesor nos mostró que algoritmos estaríamos viendo para representar esta escuela: Prim, Kruskal, Dijkstra y Huffman. Terminamos viendo un poco de cómo funcionaría Prim y Kruskal y sus diferencias.",
+    algorithmIds: ["traveling-salesman", "prim", "kruskal"]
+  },
+  {
+    id: "class-18",
+    code: "CF-018",
+    title: "Clase #18",
+    date: "2026-10-15",
+    dateLabel: "15 de octubre del 2026",
+    summary: "¿Prim o Kruskal? Paso a paso de los algoritmos y cómo elegir uno sobre el otro.",
+    reflection: "Hoy nos enfocamos en meternos más en los algoritmos de Prim y Kruskal. La clase pasada nos introdujeron a ellos, pero hoy estamos yendo paso a paso viendo cómo toman decisiones. Lo principal que me quedó es que Prim trabaja en un solo árbol en todo momento buscando expandirlo, mientras que Kruskal crea varios árboles que eventualmente se unirán en uno. Algo importante que platicamos hoy fue cómo elegir uno sobre el otro viendo que solucionan el mismo problema. La respuesta estando en sus complejidades temporales y la densidad de los grafos. Dado que Kruskal tiene una complejidad temporal de O(m log n) siendo m el número de arcos y n el número de nodos, funciona mejor para grafos poco densos y Prim, con complejidad temporal de O(n^2), funciona mejor para grafos densos. En los ejemplos con imágenes realmente no era díficil entender, pero al ver el código que nos puso el profesor, se puede ver que hay que tener muy en claro el uso de estructuras y flujo de código.",
+    algorithmIds: ["prim", "kruskal"]
+  },
+  {
+    id: "class-19",
+    code: "CF-019",
+    title: "Clase #19",
+    date: "2026-10-19",
+    dateLabel: "19 de octubre del 2026",
+    summary: "Introducción a Dijkstra y cómo funciona.",
+    reflection: "En esta clase vimos el algoritmo de Dijkstra. La verdad, por experiencias pasadas, no me sentía muy optimista, pero me sorprendí bastante. Básicamente, con el algoritmo buscamos encontrar el camino óptimo de un nodo a todos los otros nodos. Una pregunta inicial que hicieron mis compañeros es, ¿sería lo mismo aplicar dijkstra n veces a aplicar floyd una vez? Supongo que en términos de tiempo, sí. Pero también hay que ver la memoria pues para cada nodo dijkstra almacena varios arreglos y Floyd agrega un renglón y una columna más a su matriz. Regresando a mi sorpresa, esta vez vimos más visualmente que es lo que busca hacer Dijkstra y eso fue la clave para que finalmente pudiera entender que ocurre. En el pasado, intentaron explicarme con puro código y me confundió un montón. Pero con el apoyo visual, entendí bien y entendí que es cómo un Prim pero acumulando pesos de arcos. Terminamos con un kahoot en gremio donde me ayudo escuchar el razonamiento de mis compañeras.",
+    algorithmIds: ["dijkstra"]
+  },
+  {
+    id: "class-20",
+    code: "CF-020",
+    title: "Clase #20",
+    date: "2026-10-22",
+    dateLabel: "22 de octubre del 2026",
+    summary: "Comprimiendo archivos con Huffman y repaso de la escuela de los algoritmos voraces.",
+    reflection: "Es la última clase del periodo y vimos un algoritmo que resuelve una pregunta que me hago constantemente. ¿Cómo se codifican los archivos para comprimirlos y reducir su peso? Si bien es una herramienta que uso constantemente, nunca hubiera podido imaginar cómo es que un mismo archivo puede reducir su peso tanto. En fin, repasamos un poco de la historia detrás de cómo el algoritmo surgió y vimos paso a paso cómo funciona la codificación usando las repeticiones de un cáracter en un archivo y su acomodo en el árbol. Algo que me pareció importante dejar grabado es que Huffman no buscaba ser una medida de seguridad, sino que su único propósito es reducir el peso de los archivos. Esto es debido a que la llave para decodificar el archivo viene en el mismo archivo, así que cualquier persona que lo tenga, podría ver su contenido. Finalmente, tuvimos la autoevaluación #4 y no me fue bien. Pero no me preocupa porque al salir de clase pude ver con más claridad mis errores y empezaré a trabajar en el mastery lo antes posible.",
+    algorithmIds: ["huffman"]
+  },
 ];

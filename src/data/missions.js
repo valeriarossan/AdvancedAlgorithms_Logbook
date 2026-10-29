@@ -31,5 +31,35 @@ export const missions = [
     summary: "Búsqueda de una solución para el problema de llenado de cisternas.",
     reflection: "6 septiembre del 2026\n\nEn esta misión tuvimos la oportunidad de nosotros visualizar la solución al problema de llenado de cisternas desde cero nosotros mismos. La verdad es que la primera vez que leí el problema no encontré la solución (ni la segunda, ni la tercera). Pasé algunos días pensando en cuál podría ser la solución más adecuada pues tenía varias ideas. Sin embargo, no fue hasta que, con parte de mi gremio, nos metimos al recurso de canvas y obtuvimos una pista ahí mismo que empezaron a surgir ideas más atinadas. Yo había pensado ya en una idea que hiciera uso de búsqueda binaria pero le hacia falta una parte clave: hacer solo los calculos necesarios. Mientras que mi idea tenía en las bases buscar la altura en la cual se pudiera almacenar la cantidad de agua necesaria por medio de una búsqueda binaria, también hacia uso de muchas más operaciones de las necesarias. Sin embargo fue una de las bases necesarias para que llegara a la solución adecuada. Finalmente, he de decir que la parte más díficil fue esa: pensar en la solución. Pues al ya tenerla, la programación fue mucho más simple y solo necesitaría depurar errores sencillos.",
     algorithmIds: []
+  },
+  {
+    id: "mission-06",
+    code: "MS-006",
+    title: "Misión #6",
+    date: "",
+    dateLabel: "",
+    summary: "Aplicación del algoritmo de Floyd en aviación.",
+    reflection: "4 octubre del 2026\n\nEn mi opinión, esta ha sido una de las misiones más divertidas de todo el curso. No sé si es porque pude ver una aplicación real del algoritmo de Floyd o porque el algoritmo ha sido uno de los que más he entendido, pero realmente me divertí construyendo la solución y viendo paso a paso cómo crecía. Además, me gusto que en los casos de prueba grandes, no solo podías comprobar que la respuesta que se diera fuera la correcta, sino que el resultado era más que un simple número: era un camino. Aprendí bastante, más especificamente de como reconstruir dicho camino, pero también me gustó finalmente implementar esas 4 famosas líneas de pseudocódigo y verlas funcionar.",
+    algorithmIds: []
+  },
+  {
+    id: "mission-07",
+    code: "MS-007",
+    title: "Misión #7",
+    date: "",
+    dateLabel: "",
+    summary: "Triangulación con programación dinámica.",
+    reflection: "11 octubre del 2026\n\nEsta misión fue un reto totalmente. Me acuerdo de haber leído el problema por primera vez y no saber ni por dónde empezar, pero poco a poco, y con las estrategias del profesor, contruí un camino para recorrer. Tenías que pensar en cómo dividir el problema y cómo ibas a explorar las opciones para construir la solución óptima. Claramente, no me salió a la primera, pero los problemas que me enfrentaba solo me mostraban caminos que no había considerado. Después de que implementé la solución me di cuenta de que no fue mi implementación favorita, pero que no era desconocida pues su estructura era demasiado parecida a algoritmos que hemos practicado en clase y que realmente no tenía nada que temer.",
+    algorithmIds: []
+  },
+  {
+    id: "mission-08",
+    code: "MS-008",
+    title: "Misión #8",
+    date: "",
+    dateLabel: "",
+    summary: "Enseñanza del problema de la Subsecuencia Común Más Larga.",
+    reflection: "24 octubre del 2026\n\nEsta misión me tomó un poquito más de tiempo porque distribuí las cargas en varios días. Sin embargo, me divertí haciendola porque el problema de la Subsecuencia Común Más Larga siento que es uno de esos problemas dónde puedes visualizar super fácil cómo funciona la programación dinámica y una vez que entendiste, es super fácil recordar. Me gustó no solo resolver un problema específico, sino tener que indagar y cuestionarme el porque de todo para poder explicarlo a otros. Al final creo que lo que más me ayudo fue los apoyos visuales y hacer una pequeña implementación en C++ que dejé en los créditos. Fue una buena experiencia donde no me sentí presionada a llegar a un objetivo super específico, pero donde si aprendí y me rete a cuestionar y entender más que solo repetir.",
+    algorithmIds: []
   }
 ];

@@ -55,11 +55,13 @@ export default function Home() {
             </span>
 
             <h1>
-              El arte de
+              Bitácora de
               <br />
-              <em>resolver</em>
+              <em>registro de</em>
               <br />
-              problemas.
+              aprendizajes
+              <br />
+              <em>TC2038.</em>
             </h1>
 
             <p className="diary-intro">

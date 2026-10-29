@@ -65,10 +65,11 @@ export default function Profile() {
 
         <div className="profile-main">
           <div className="profile-portrait">
-            <div className="portrait-placeholder">
-              <CircleUserRound size={65} strokeWidth={0.9} />
-              <span>RETRATO DE LA AUTORA</span>
-            </div>
+            <img
+              src="/vale.png"
+              alt="Retrato de Valeria"
+              className="profile-photo"
+            />
 
             <div className="portrait-caption">
               <span>FIG. 001</span>
